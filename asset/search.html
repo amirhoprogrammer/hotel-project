@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سرچ</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="bootstrap.bundle.min.js">-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-select.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header dir="rtl">
+        <nav class="navbar  navbar-expand-md navbar-light fixed-top shadow-sm py-3 " id="navbar">
+            <button class="navbar-toggler me-4 mt-1" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a href="" class="nav-link">logo</a>
+                    </li>
+                    <!--<li class="nav-item px-3">
+                            <a href="" class="nav-link">صفحه اصلی</a>
+                        </li>-->
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link"> لیست هتل ها<img src="image/flash.png"
+                                style="width: 20px; height: 20px;" alt=""><img class="downarrow" width="10px"></a>
+                        <ul style="list-style-type: none; padding: 0 20px; border-radius: 8px;">
+                            <li><a href="#" class="nav-link">هتل های تهران</a></li>
+                            <li><a href="#" class="nav-link">هتل های مشهد</a></li>
+                            <li><a href="#" class="nav-link">هتل های شیراز</a></li>
+                            <li><a href="#" class="nav-link">هتل های اصفهان</a></li>
+                            <li><a href="#" class="nav-link">هتل های یزد</a></li>
+                            <li><a href="#" class="nav-link">هتل های تبریز</a></li>
+                            <li><a href="#" class="nav-link">هتل های کیش</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">رزرو هتل</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">درباره ما</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">تماس با ما</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link"><button class="btn rounded-1" style="background-color: #B22222;color: #222222;">پیگیری رزرو</button></a>
+                    </li>
+                </ul>
+            </div>
+            <ul style="list-style-type: none;">
+                <li class=" px-3">
+                    <a href="#"><img src="image/icons8-user-96.png" style="width: 40px; height: 40px; margin-top: 10px;"
+                            alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div id="top-carousel" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('image/PHK_Exterior_1280.jpg')">
+                        <div class="carousel-overlay">
+    
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/pexels-aleksandar-pasaric.jpg')">
+                        <div class="carousel-overlay">
+    
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/pexels-pixabay-290595.jpg')">
+                        <div class="carousel-overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form action="" method="">
+            <div class="container search my-3 mx-auto col-md-12" style="direction: rtl;">
+                <div class="styleSearchRow row border form-floating border-top-0 p-2 shadow-lg d-flex mx-auto col-md-12"
+                    id="tab1">
+                    <div class="col-md-3">
+                        <div class="form-floating dropbtn col-md-10 d-flex p-0 mb-1 mx-auto ">
+                            <select class="form-select py-md-2 bg-light px-0 py-0 my-0" id="floatingSelectGrid21"
+                                aria-label="Floating label select example" style="text-align: center; direction: rtl;">
+                                <option selected>انتخاب شهر</option>
+                                <option value="1"><a href="index2.html">تهران</a></option>
+                                <option value="2"><a href="index2.html">اصفهان</a></option>
+                                <option value="3"><a href="index2.html">یزد</a></option>
+                                <option value="4"><a href="index2.html">تبریز</a></option>
+                                <option value="5"><a href="index2.html">مشهد</a></option>
+                                <option value="6"><a href="index2.html">شیراز</a></option>
+                                <option value="7"><a href="index2.html">کیش</a></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-row">
+                        <p>تاریخ ورود:&nbsp</p>
+                        <input type="date" value="تاریخ ورود" name="تاریخ ورود">
+                    </div>
+                    <div class="col-md-4 d-flex flex-row">
+                        <p>تاریخ خروج:&nbsp</p>
+                        <input type="date" value="تاریخ خروج" name="تاریخ خروج">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn search-button" >جست وجو</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+    <div class="col-md-10 mx-auto container my-2 bg-light">
+        <div class="d-flex flex-row row col-md-12 ">
+            <div class="col-md-9">
+                <div class="col-md-12 mt-2" >
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-radius: 10px;">
+                        <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ارزان ترین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">گران ترین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">بیشترین تخفیف</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">محبوب ترین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">پرفروش ترین </a>
+                                </li>
+                                <li class="nav-item py-2 px-2">
+                                    <p>:مرتب سازی بر اساس</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;" >
+                                <p style="text-align: justify;direction: rtl;font-size: small;" >رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">  
+                            <button type="button" class="btn " style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>      
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>         
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex flex-row-reverse my-4 bg-white rounded-1">
+                    <div class="col-md-4">
+                        <img src="image/هتل+اسپیناس.jpg" alt="" class="card-img rounded-1">
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: justify;direction: rtl; font-size: larger;" class="mx-2"><b>هتل اسپیناس پالاس</b></p>
+                        <p style="text-align: justify;direction: rtl;font-size: small;" class="mx-2">آدرس : تهران ،میدان سعادت
+                            آباد،میدان بهرود، خیابان عابدی، خیابان 33، شماره 21، هتل اسپیناس پالاس</p>
+                        <div class="col-md-12 d-flex flex-row-reverse">
+                            <div class="col-md-5 px-2 mx-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                                30 % تخفیف
+                            </div>
+                            <div class="col-md-7 d-flex flex-row-reverse my-1">
+                                <img src="image/tik.png" alt="" style="width: 25px; height: 25px;">
+                                <p style="text-align: justify;direction: rtl;font-size: small;">رزرو آنلاین</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 ">
+                        <p style="text-align:center; font-size: small; " class="mx-2">شروع قیمت برای 1 شب </p>
+                        <p style="text-align:center; font-size: medium;" class="mx-2"> 6,650,000 تومان </p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn "
+                                style="background-color: #B22222;border-radius: 30px; text-align: center;height: 40px; width: 150px; color: #222222;">انتخاب
+                                اتاق و رزرو</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 rounded-1 kadr my-2">
+                <div class="row"> 
+                    <p class="mb-4 px-3" style="text-align: justify; direction: rtl; font-size: x-large;">بازه قیمت رزرو</p>
+                    <p class="px-3" style="text-align: justify; direction: rtl;">کمترین قیمت:</p>
+                    <input type="text" class="col-md-11 mx-2 custom-form" name="lestcost" placeholder="کمترین قیمت"
+                        style="direction: rtl;">
+                    <p class="px-3" style="text-align: justify; direction: rtl;">بیشترین قیمت:</p>
+                    <input type="text" class="col-md-11 mx-2 custom-form mb-4" name="mostcost" placeholder="بیشترین قیمت" style="direction: rtl;">
+                    <hr>
+                    <p class="mb-4 px-3" style="text-align: justify; direction: rtl; font-size: x-large;">هتل</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckDefault" style="float: right;">
+                            هتل 5 ستاره
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            هتل 4 ستاره
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            هتل 3 ستاره
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            هتل 2 ستاره
+                        </label>
+                    </div>
+                    <div class="form-check mb-3" >
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            هتل 1 ستاره
+                        </label>
+                    </div>
+                    <hr>
+                    <p class="mb-4 px-3" style="text-align: justify; direction: rtl; font-size: x-large;">نوع اقامتگاه</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckDefault" style="float: right;">
+                            بوم گردی
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckDefault" style="float: right;">
+                            مهمان سرا
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            هتل
+                        </label> 
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            متل
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            هتل آپارتمان
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            اقامتگاه
+                        </label>
+                    </div>
+                    <hr>
+                    <p class="mb-4 px-3" style="text-align: justify; direction: rtl; font-size: x-large">امکانات هتل</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckDefault" style="float: right;">
+                            استخر
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckDefault" style="float: right;">
+                            اینترنت 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            سرویس فرنگی
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            سرویس ایرانی
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            پارکینگ
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            ترانسفر فرودگاهی
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            نمازخانه
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            ماهواره
+                        </label>
+                    </div> 
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            بیلیارد
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="float: right;">
+                        <label class="form-check-label px-3" for="flexCheckChecked" style="float: right;">
+                            سونا و جکوزی
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row">
+                        <div class="col-md-6 px-2 mx-1 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                            اعمال فیلتر ها
+                        </div>
+                        <div class="col-md-6 px-2 py-1" style="border-radius: 5px;background-color: #B22222 ;color: #222222;">
+                            حذف فیلتر ها
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
