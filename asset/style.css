@@ -1,0 +1,17 @@
+.custom-form{
+    border: 0;
+    border-bottom: 2px solid gray;
+}
+.custom-form:focus {
+    outline: 0;
+}
+.kadr{
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.navbarNav{
+    float: right;
+}
