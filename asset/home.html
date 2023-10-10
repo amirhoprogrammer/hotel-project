@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.bundle.min.js"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-select.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <title>Project - Home Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">   
+    <header dir="rtl">
+        <nav class="navbar  navbar-expand-md navbar-light fixed-top shadow-sm py-3 " id="navbar">
+            <button class="navbar-toggler me-4 mt-1" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a href="" class="nav-link">logo</a>
+                    </li>
+                    <!--<li class="nav-item px-3">
+                        <a href="" class="nav-link">صفحه اصلی</a>
+                    </li>-->
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link"> لیست هتل ها<img src="image/flash.png"
+                                style="width: 20px; height: 20px;" alt=""><img class="downarrow" width="10px"></a>
+                        <ul style="list-style-type: none; padding: 0 20px; border-radius: 8px;">
+                            <li><a href="#" class="nav-link">هتل های تهران</a></li>
+                            <li><a href="#" class="nav-link">هتل های مشهد</a></li>
+                            <li><a href="#" class="nav-link">هتل های شیراز</a></li>
+                            <li><a href="#" class="nav-link">هتل های اصفهان</a></li>
+                            <li><a href="#" class="nav-link">هتل های یزد</a></li>
+                            <li><a href="#" class="nav-link">هتل های تبریز</a></li>
+                            <li><a href="#" class="nav-link">هتل های کیش</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">رزرو هتل</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">درباره ما</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">تماس با ما</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="index.html" class="nav-link p-1">
+                            <button class="btn rounded-1 text-center p-1 peigiri">پیگیری رزرو</button></a>
+                    </li>
+                </ul>
+            </div>
+            <ul style="list-style-type: none;">
+                <li class=" px-3">
+                    <a href="#"><img src="image/icons8-user-96.png" style="width: 40px; height: 40px; margin-top: 10px;"
+                            alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div id="top-carousel" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('image/PHK_Exterior_1280.jpg')">
+                        <div class="carousel-overlay">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/pexels-aleksandar-pasaric.jpg')">
+                        <div class="carousel-overlay">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/pexels-pixabay-290595.jpg')">
+                        <div class="carousel-overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <form action="" method="">
+            <div class="container search my-3 mx-auto col-md-12" style="direction: rtl;">
+                <div class="styleSearchRow row border form-floating border-top-0 p-2 shadow-lg d-flex mx-auto col-md-12" id="tab1">
+                    <div class="col-md-3">
+                        <div class="form-floating dropbtn col-md-10 d-flex p-0 mb-1 mx-auto ">
+                            <select class="form-select py-md-2 bg-light px-0 py-0 my-0" id="floatingSelectGrid21"
+                                aria-label="Floating label select example" style="text-align: center; direction: rtl;">
+                                <option selected>انتخاب شهر:</option>
+                                <option value="1">تهران</option>
+                                <option value="2">اصفهان</option>
+                                <option value="3">یزد</option>
+                                <option value="4">تبریز</option>
+                                <option value="5">مشهد</option>
+                                <option value="6">شیراز</option>
+                                <option value="7">کیش</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-row">
+                        <p>تاریخ ورود: </p>
+                        <input type="date" value="تاریخ ورود" name="تاریخ ورود">
+                    </div>
+                    <div class="col-md-3 d-flex flex-row">
+                        <p>تاریخ خروج: </p>
+                        <input type="date" value="تاریخ خروج" name="تاریخ خروج">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn search-button">جست وجو</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+    <main>
+        <div class="col-md-12 container">
+            <div class="d-flex flex-row">    
+                <div class="col-md-3">
+                    <p>پرفروش ترین ها</p>
+                </div>
+                <div class="col-md-6">
+                    <p>پرفروش ترین ها</p>
+                </div>
+                <div class="col-md-3 d-flex flex-row-reverse">
+                    <a href="#">
+                        <button class="btn rounded-1 text-center py-1 see">مشاهده همه</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row mb-5 d-flex justify-content-center">
+                <div class="col-6 col-md-3 d-flex justify-content-center ">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class=" card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;"
+                                    alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p> 5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000 تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 1/000/000 </strong>
+                            </div>
+                            <button type="submit" class="btn11 ">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4 ">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;"
+                                    alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 1/000/000</strong>
+                            </div>
+                            <button type="submit" class="btn11">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4 ">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;"
+                                    alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000 تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 10/000/000/000</strong>
+                            </div>
+                            <button type="submit" class="btn11">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4 ">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;"
+                                    alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000 تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 1/000/000 </strong>
+                            </div>
+                            <button type="submit" class="btn11 ">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-main-img">
+            <div class="home-main-text">
+                <h3>هتل <span style="color: #fd5631;">رویایی</span> خود را پیدا کنید!</h3>
+                <p>وقتی مسافرت میروید ولی نمی دانید کدام هتل بهترین خدمات را ارایه می دهد ؟ اگر دنبال هتل 4و 5 ستاره هستید حتما با ما تماس بگیرید</p>
+            </div>
+        </div>
+        <div class="col-md-12 container">
+            <div class="d-flex flex-row">
+                <div class="col-md-3">
+                    <p>بیشترین تخفیف ها</p>
+                </div>
+                <div class="col-md-6">
+                    <p>پرفروش ترین ها</p>
+                </div>
+                <div class="col-md-3 d-flex flex-row-reverse">
+                    <a href="#">
+                        <button class="btn rounded-1 text-center py-1 see">مشاهده همه</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row mb-5 d-flex justify-content-center">
+                <div class="col-6 col-md-3 d-flex justify-content-center ">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class=" card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p> 5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000 تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 1/000/000 </strong>
+                            </div>
+                            <button type="submit" class="btn11 ">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4 ">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 1/000/000</strong>
+                            </div>
+                            <button type="submit" class="btn11">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4 ">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000 تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 10/000/000/000</strong>
+                            </div>
+                            <button type="submit" class="btn11">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="image/هتل+اسپیناس.jpg" class="card-img-top " alt="...">
+                        <div class="card-img-overlay h-25 l-0 p-0 pt-4 ">
+                            <!--<p class="bg-primary d-inline px-2 py-1 text-white rounded-start-5">خرید</p>-->
+                            <div class="code rounded-end-5">
+                                <p>تخفیف</p>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title mx-auto mb-4 text-center">هتل اسپیناس پالاس</h5>
+                            <div class="loc d-flex ">
+                                <img src="image/location.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>تهران - سعادت آباد- میدان بهرود</p>
+                            </div>
+                            <div class="room d-flex ">
+                                <img src="image/bed.png" style="width: 25px; height: 25px; margin-left: 0.5vw;" alt="">
+                                <p>5 ستاره</p>
+                            </div>
+                            <div class="price1 d-flex justify-content-between">
+                                <p>شروع قیمت از</p>
+                                <strong> 1/000/000 تومان</strong>
+                            </div>
+                            <div class="price2 d-flex justify-content-between">
+                                <p>قیمت کل</p>
+                                <strong> 1/000/000 </strong>
+                            </div>
+                            <button type="submit" class="btn11 ">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 mx-auto container group text-center my-2 rounded-3">
+            <p style="font-size: xx-large;">گروه هتل ها</p>
+        </div>
+        <swiper-container class="mySwiper d-flex flex-column justify-content-center" pagination="true"
+            pagination-clickable="true" space-between="30" slides-per-view="3">
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/LOGO-Orginal.png">
+                <a href="#">گروه هتل های اسپیناس</a>
+                <a href="#">09123456789</a>
+            </swiper-slide>
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/Homahotelslogo.jpg">
+                <a href="#">گروه هتل های هما</a>
+                <a href="#">09123456789</a></swiper-slide>
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/636843743393119959.jpg">
+                <a href="#">گروه هتل های بین المللی لاله</a>
+                <a href="#">09123456789</a></swiper-slide>
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/Arya-Hotel-Group-Logo.jpg">
+                <a href="#">گروه هتل های آریا</a>
+                <a href="#">09123456789</a></swiper-slide>
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/پارسیان.jpg">
+                <a href="#">گروه هتل های پارسیان</a>
+                <a href="#">09123456789</a></swiper-slide>
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/images.png">
+                <a href="#">گروه هتل های الماس</a>
+                <a href="#">09123456789</a></swiper-slide>
+            <swiper-slide class="d-flex flex-column justify-content-center align-items-center h-50 mt-5"><img
+                    src="image/پارس.jpg">
+                <a href="#">گروه هتل های پارس</a>
+                <a href="#">09123456789</a></swiper-slide>
+        </swiper-container>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+        <div class="col-md-10 mx-auto container group text-center rounded-3 mb-2">
+            <div class="row">
+                <p class="col-md-8 py-3 text-end" style="font-size: large; direction: rtl;">برای مشاهده بیشتر روی دکمه مشاهده همه کلیک کنید!</p>
+                <div class="col-md-4 d-flex justify-content-center">
+                <button class="btn rounded-1 text-center py-1 group1 my-2">مشاهده همه</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 container">
+            <h4>رزرو هتل با ایران هتل آنلاین و تجربه سفری آرام</h4>
+            <p style="text-align: justify;direction: rtl;">
+            امروزه رزرو آنلاین هتل هنگام سفر از اهمیت به سزایی برخوردار است. ایران هتل آنلاین با هدف جلب رضایت میهمانان امکان رزرو
+            هتل به صورت آنلاین را فراهم آورده است و تجربه ی سفری آرام و به دور از دغدغه های احتمالی را برای میهمانانی که قصد سفر به
+            جای جای ایران را دارند، به ارمغان می‌آورد. ایران هتل آنلاین از اولین، با قدمت‌ترین و معتبرترین وبسایت‌های رزرو هتل در
+            ایران است و ارائه‌دهنده بهترین تخفیفات در ایام مختلف سال به مسافران گرامی می‌باشد.
+            هنگام رزرو آنلاین هتل با وبسایت ایران هتل آنلاین امکانات متنوعی در اختیار میهمانان گرانقدر قرار داده می‌شود. ایران هتل
+            آنلاین تنها وبسایتی است که امکان جستجو هتل ها بر اساس خیابان یا مکانی خاص را به میهمان می دهد. میهمان با وارد کردن نام
+            مکان یا خیابان مورد نظر خود در کادر جستجو می‌تواند تعداد هتل‌های آن منطقه را مشاهده نماید.
+            گالری تصاویر، ارائه اطلاعات کامل و با جزئیات از هتل، موقعیت مکانی هر هتل، آدرس آن روی نقشه، ثبت تجربیات و نظرات بیش از
+            نیم میلیون میهمان و همینطور ثبت رتبه هتل از دید آنان افق دید گسترده‌ای از هتل‌ها و مراکز اقامتی پیش روی افرادی که قصد
+            رزرو هتل به صورت آنلاین را دارند، نهاده است .
+            </p>
+            <h4>رزرو آنلاین هتل ، سفر به سبکی هوشمندانه</h4>
+            <p style="text-align: justify;direction: rtl;">
+            امروزه با قرار گرفتن در عصر تکنولوژی با چند کلیک ساده قادر خواهیم بود به دنیایی از اطلاعات دست یابیم. رزرو هتل و
+            برنامه‌ریزی برای اقامت و سفری دلپذیر هم از این قاعده مستثنی نیست. زمانی که بتوانیم پیش از سفر با مشاهده و مقایسه‌ی
+            هتل‌های مختلف مقصدمان، با خیالی راحت انتخابی مناسب داشته باشیم دیگر تصمیم گیری برای محل اقامت، کار دشواری نیست.
+            رزرو هتل به صورت ساده و راحت شاید به جرات بتوان گفت مهمترین عامل در لذت از سفر است. زمانی که تیم ایران هتل آنلاین در
+            زمینه رزرو هتل در کنار شما باشند، این مسئله به سادگی میسر می‌شود. پشتیبانی 24 ساعته و همیشگی خدمات مشتریان ایران هتل
+            آنلاین سفری راحت را برای شما رقم خواهد زد و امکان پیگیری رزرو را در هر ساعت از شبانه روز و هر مرحله از سفر فراهم می
+            آورد.
+            ایران هتل آنلاین با گردآوری سیستمی یکپارچه، آسان و با جستجویی دقیق، امکان رزرو هتل مطابق با خواسته و نیازهای میهمانان را
+            به سادگی مهیا نموده و مراکز اقامتی متنوعی را در اختیار میهمانان قرار می دهد. با ایران هتل آنلاین در بیشتر شهرهای مختلف
+            ایران می‌توان اقدام به رزرو هتل کرد؛ بنابراین با جستجو در سایت ایران هتل آنلاین برای یافتن مراکز اقامتی مناسب گزینه‌های
+            زیادی پیش روی شما خواهد بود.
+            برای تمامی شهرها و مقاصد شما، ایران هتل آنلاین پشنهادی مناسب و شگفت انگیز خواهد داشت. بعد از انتخاب واحد اقامتی مورد نظر
+            در سایت ایران هتل آنلاین، کد پیگیری 10 رقمی به ایمیل و شماره موبایل شما ارسال می‌گردد و شما می‌توانید واچر را بلافاصله
+            بعد از پرداخت وجه دریافت نمایید
+            </p>
+            <div class="col-md-2">
+                <button class="btn rounded-1 text-center py-1 group1 my-2">مشاهده بیشتر</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white pb-4">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="row" style="width: 90vw;">
+                <div class="footer-text">
+                    <div class="col h-100 d-flex justify-content-between">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h1>آمار بازدید</h1>
+                            </li>
+                            <li>
+                                <p>بازدید های امروز : 567</p>
+                            </li>
+                            <li>
+                                <p>بازدید های 7 پیش :3986</p>
+                            </li>
+                            <li>
+                                <p>بازدید های 30 روز پیش :15934</p>
+                            </li>
+                            <li>
+                                <p>کل بازدید ها : 1980000</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col h-100 d-flex justify-content-between">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h1>تماس با ما </h1>
+                            </li>
+                            <li>
+                                <a href="#">تلفن دفتر مرکزی :44456789</a>
+                            </li>
+                            <li>
+                                <a href="#">فکس: 66893412</a>
+                            </li>
+                            <li>
+                                <a href="#">ایمیل : info@hotelyar.ir</a>
+                            </li>
+                            <li>
+                                <a href="#">آدرس :تهران،بلوار دریا،</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex flex-row ">
+                        <div class="list-unstyled1 d-flex justify-content-around align-items-center flex-column">
+                            <div class="row">  
+                                <img class="img-fluid" src="image/samandehi.png" alt="">
+                                <img class="img-fluid" src="image/download.png" alt="" style="width: 100px;height: 100px;">
+                                </div>
+                            <img class="img-fluid" src="image/logo334-N1111.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div dir="ltr" class="row">
+                        <div class="col-sm-12 social-media d-flex justify-content-center">
+                            <img src="image/telegram_4902.png" alt="Telegram" class="mx-2">
+                            <img src="image/instagram_140.png" alt="Instagram" class="mx-2">
+                            <img src="image/facebook-circula.png" alt="Facebook" class="mx-2">
+                            <img src="image/twitter_.png" alt="Twitter" class="mx-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
