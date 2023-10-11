@@ -125,7 +125,7 @@ body {
     border-radius: 50%;
 }
 
-/*.mySwiper {
+.mySwiper {
     height: 250px;
     margin-bottom: 50px;
     width: 100vw;
@@ -154,7 +154,7 @@ swiper-slide a {
     margin-top: 10px;
     text-decoration: none;
     color: black;
-}*/
+}
 
 .footer-text {
     display: flex;
