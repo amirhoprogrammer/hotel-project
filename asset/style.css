@@ -1,17 +1,128 @@
-.custom-form{
+.custom-form {
     border: 0;
     border-bottom: 2px solid gray;
 }
+
 .custom-form:focus {
     outline: 0;
 }
-.kadr{
+
+.kadr {
     background-color: white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-.navbarNav{
+
+.navbarNav {
     float: right;
+}
+
+.peigiri {
+    background-color: #B22222;
+    color: #222222;
+    height: 30px;
+}
+
+.see {
+    background-color: #B22222;
+    color: #222222;
+    height: 30px;
+}
+
+.group {
+    background-color: #B22222;
+    color: #222222;
+    height: 60px;
+
+}
+
+.group1 {
+    background-color: #222222;
+    color: white;
+    height: 45px;
+}
+
+#caramooz {
+    direction: rtl;
+    word-spacing: 2.5px;
+    line-height: 50px;
+}
+
+h4[id |=title] {
+    margin: 20px;
+    width: max-content;
+    background-color: #2F4858;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+
+#shoar {
+    font-weight: 400;
+    align-self: center;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+/*li:before {
+    /* display: block; 
+    content: "\1F534";*/
+/* border: 0.4em solid red ;     */
+/* border-radius: 0.9em;
+            position: absolute;
+            right: 30px;  
+            line-height: 2cm;   
+
+}*/
+
+span {
+    color: #B22222;
+}
+
+.ertebat {
+    /* outline: 0; */
+    border: 0;
+    border-bottom: 2px solid gray;
+}
+
+.ertebat:focus {
+    outline: 0;
+}
+
+@media (max-width: 700px) {
+    .ertebat {
+        width: 100%;
+    }
+}
+
+.text-muted {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.ertebat:focus {
+    outline: 0;
+}
+
+#kad {
+    background-color: #2F4858;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    max-height: 500px;
+}
+
+#kadr {
+    line-height: 40px;
+    word-spacing: 2.5px;
+    border-bottom: 5px solid white;
 }
