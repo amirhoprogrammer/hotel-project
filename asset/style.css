@@ -88,13 +88,23 @@ span {
 .ertebat {
     /* outline: 0; */
     border: 0;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid black;
 }
 
 .ertebat:focus {
     outline: 0;
 }
+.comment-form{
+    font-size: xx-large;
+}
 
+.submit-btn{
+    border-radius: 30px;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    background-color: #2F6900;
+}
 @media (max-width: 700px) {
     .ertebat {
         width: 100%;
@@ -113,7 +123,7 @@ span {
 }
 
 #kad {
-    background-color: #843471;
+    background-color: #354A6F;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
