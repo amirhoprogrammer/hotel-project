@@ -45,7 +45,7 @@ body {
 }
 
 .btn11 {
-    background: #FD5631;
+    background: #B22222;
     color: white;
     border: 0;
     margin: 0 auto;
@@ -146,7 +146,7 @@ swiper-slide img:hover {
     width: 130px;
     height: 130px;
     padding: 8px;
-    border: 2px solid #FD5631;
+    border: 2px solid #B22222;
 }
 
 swiper-slide a {
@@ -183,7 +183,7 @@ swiper-slide a {
 }
 
 .list-unstyled li a:hover {
-    color: #FD5631 !important;
+    color: #B22222 !important;
     cursor: pointer;
 }
 
@@ -277,14 +277,14 @@ swiper-slide a {
     padding-top: 100px;
 }
 
-/*.dropbtn {
+dropbtn {
     width: 7.5vw;
     font-size: 0.8rem;
     line-height: normal;
     border-radius: 10px;
     min-height: 1px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}*/
+}
 
 
 #myInput {
@@ -331,14 +331,14 @@ swiper-slide a {
     text-align: center;
 }*/
 
-.show {
+/*.show {
     display: flex;
     min-height: 5px;
-}
+}*/
 
-.searchbtn {
+/*.searchbtn {
     width: 9vw;
-    background-color: #FD5631;
+    background-color: #B22222;
     color: white;
     margin-left: 3vw;
     font-size: 1.2vw;
@@ -346,10 +346,10 @@ swiper-slide a {
 
 .searchbtn:hover {
     color: white;
-    background-color: #FD5631;
-}
+    background-color: #B22222;
+}*/
 
-.input-button {
+/*.input-button {
     width: 100%;
     display: flex;
     justify-content: start;
@@ -358,7 +358,7 @@ swiper-slide a {
 .input-button-top,
 .input-button-bottom {
     display: flex;
-}
+}*/
 
 .search {
     /*width: 80vw;*/
@@ -415,7 +415,7 @@ swiper-slide a {
     -o-border-radius: 8px;
 }
 
-.collaps-price,
+/*.collaps-price,
 .collaps-area {
     margin-bottom: 8px;
     border: 1px solid ghostwhite;
@@ -459,7 +459,7 @@ swiper-slide a {
 .collaps-price:hover>.collapse1 {
     display: flex;
     position: absolute;
-}
+}*/
 
 .collapse1 form {
     display: flex;
