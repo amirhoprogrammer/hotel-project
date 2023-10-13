@@ -66,19 +66,12 @@ h4[id |=title] {
     text-align: center;
 }
 
-/*.li {
+.emkanat li{
     list-style: none;
 }
 
-/*li:before {
-    /* display: block; 
-    content: "\1F534";*/
-/* border: 0.4em solid red ;     */
-/* border-radius: 0.9em;
-            position: absolute;
-            right: 30px;  
-            line-height: 2cm;   
-
+.emkanat li:before{
+    content: "\1F534";
 }
 
 span {
@@ -120,6 +113,7 @@ span {
     color: white;
     border-radius: 10px
 }
+
 @media (max-width: 700px) {
     .ertebat {
         width: 100%;
