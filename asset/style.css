@@ -105,6 +105,14 @@ span {
     text-align: center;
     background-color: #2F6900;
 }
+.kadr-title{
+    background-color: #B22222;
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+}
 @media (max-width: 700px) {
     .ertebat {
         width: 100%;
