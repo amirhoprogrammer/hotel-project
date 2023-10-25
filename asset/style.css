@@ -144,3 +144,24 @@ span {
     word-spacing: 2.5px;
     border-bottom: 5px solid white;
 }
+.titre{
+    color: white;
+}
+.cost-ho{
+    border-radius: 15px;
+    background-color: #A4A5EE;
+    width: 210px;
+}
+@media screen and (max-width=992px) {
+    .titre{
+        font-size: 1vw;
+        padding: 0;       
+    }
+    .cost-ho{
+        font-size: 0.1vw;
+        padding: 0;
+    }
+    .hotel-ca{
+        max-height: 2500px;
+    }    
+}
