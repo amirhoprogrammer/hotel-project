@@ -1,0 +1,336 @@
+.custom-input {
+    /* outline: 0; */
+    border: 0;
+    transition-duration: 0.7s;
+    border-bottom: 2px solid gray;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.custom-input:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0;
+    border-bottom: 3px solid #FD5631;
+}
+
+.form-check-input {
+    transition: all ease-in;
+    -webkit-transition: all ease-in;
+    -moz-transition: all ease-in;
+    -ms-transition: all ease-in;
+    -o-transition: all ease-in;
+}
+
+.form-check-input:checked {
+    background-color: #FD5631;
+    box-shadow: none !important;
+    border: 0;
+}
+
+.input[type="file"] {
+    background-color: #FD5631;
+}
+
+.form-select {
+    transition: all ease 0.3s !important;
+    -webkit-transition: all ease 0.3s !important;
+    -moz-transition: all ease 0.3s !important;
+    -ms-transition: all ease 0.3s !important;
+    -o-transition: all ease 0.3s !important;
+
+}
+
+.form-select:focus {
+    border: 2px solid #FD5631 !important;
+    box-shadow: none !important;
+
+}
+
+
+#comment {
+    direction: rtl;
+    text-align: right;
+}
+
+.form-check input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+input[type="radio"] {
+    min-width: 16px !important;
+    min-height: 16px !important;
+}
+
+input[type="checkbox"] {
+    min-width: 16px !important;
+    min-height: 16px !important;
+}
+
+#navbar {
+    padding: 0 !important;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.56);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+}
+
+#nav .nav-item {
+    padding: 10px 0;
+}
+
+.navbar ul ul {
+    display: none;
+
+}
+
+.navbar ul li {
+    font-size: 1.4vw;
+    display: block;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0) !important;
+
+}
+
+.navbar ul li:hover>ul {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.77);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 0.68);
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+}
+
+.list-unstyled {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 2vw;
+    /* height: 90%; */
+}
+
+.list-unstyled li a,
+.list-unstyled li p {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+
+}
+
+.list-unstyled li a:hover {
+    color: #FD5631 !important;
+    cursor: pointer;
+}
+
+.list-unstyled1 {
+    height: 300px;
+}
+
+.list-unstyled1 img {
+    width: 8vw;
+}
+
+.list-unstyled1 img:last-child {
+    width: 15vw;
+}
+
+.social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(92%) saturate(1095%) hue-rotate(340deg) brightness(101%) contrast(98%);
+}
+
+@media screen and (max-width: 992px) {
+
+    .list-unstyled li a,
+    .list-unstyled li p {
+        font-size: 2vw;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-item,
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 0 10px !important;
+    }
+
+    .list-unstyled li a,
+    .list-unstyled li p {
+        font-size: 2vw;
+    }
+
+    .city1 {
+        margin: 0 auto;
+    }
+
+    .form-select {
+        width: 80px !important;
+        font-size: 1.3vw !important;
+    }
+
+    #input9 {
+        margin-left: 2vw !important;
+    }
+
+    #floatingSelectGrid11,
+    #floatingSelectGrid12 {
+        margin-left: 50px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    input[type="radio"] {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    .form-control {
+        font-size: 0.85rem;
+    }
+
+    #input4 {
+        font-size: 0.8rem;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-item {
+        padding: 10px 10px !important;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 2vw !important;
+    }
+
+    .navbar ul li a {
+        color: rgb(0, 0, 0) !important;
+        font-size: 3vw;
+    }
+
+    .navbar ul li:hover>ul {
+        position: relative;
+    }
+
+    .list-unstyled li a {
+        font-size: 2vw;
+    }
+
+    .tab-content {
+        height: 150px;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .list-unstyled1 {
+        display: block;
+        width: 100vw;
+        height: 200px;
+    }
+
+    .list-unstyled1 img {
+        width: 17vw;
+    }
+
+    .list-unstyled1 img:last-child {
+        width: 28vw;
+    }
+
+    #input9 {
+        margin-left: 0 !important;
+    }
+
+    #floatingSelectGrid11,
+    #floatingSelectGrid12 {
+        margin-left: 10px !important;
+    }
+}
+
+.form-select {
+    background-image: none;
+    background-size: 0;
+    padding: 0 0 !important;
+    height: calc(3.2rem + 2px) !important;
+    line-height: 3.2 !important;
+}
+
+.fontSetter {
+    font-size: 18px;
+}
+
+.fontter {
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .fontSetter {
+        font-size: 16px !important;
+    }
+
+    .fontter {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .list-unstyled li a,
+    .list-unstyled li p {
+        font-size: 2.7vw;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 4vw !important;
+    }
+
+    .form-select {
+        width: 60px !important;
+        font-size: 1.8vw !important;
+    }
+
+    .fontSetter {
+        font-size: 10px !important;
+
+    }
+
+    .title1 {
+        font-size: 10px !important;
+    }
+}
