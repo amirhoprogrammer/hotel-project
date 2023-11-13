@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشخصات هتل</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.bundle.min.js"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-select.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header dir="rtl">
+        <nav class="navbar  navbar-expand-md navbar-light fixed-top shadow-sm py-3 " id="navbar">
+            <button class="navbar-toggler me-4 mt-1" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a href="" class="nav-link">logo</a>
+                    </li>
+                    <!--<li class="nav-item px-3">
+                            <a href="" class="nav-link">صفحه اصلی</a>
+                        </li>-->
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link"> لیست هتل ها<img src="image/flash.png"
+                                style="width: 20px; height: 20px;" alt=""><img class="downarrow" width="10px"></a>
+                        <ul style="list-style-type: none; padding: 0 20px; border-radius: 8px;">
+                            <li><a href="#" class="nav-link">هتل های تهران</a></li>
+                            <li><a href="#" class="nav-link">هتل های مشهد</a></li>
+                            <li><a href="#" class="nav-link">هتل های شیراز</a></li>
+                            <li><a href="#" class="nav-link">هتل های اصفهان</a></li>
+                            <li><a href="#" class="nav-link">هتل های یزد</a></li>
+                            <li><a href="#" class="nav-link">هتل های تبریز</a></li>
+                            <li><a href="#" class="nav-link">هتل های کیش</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">رزرو هتل</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">درباره ما</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">تماس با ما</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="index.html" class="nav-link p-1">
+                            <button class="btn rounded-1 text-center p-1 peigiri">پیگیری رزرو</button></a>
+                    </li>
+                </ul>
+            </div>
+            <ul style="list-style-type: none;">
+                <li class=" px-3">
+                    <a href="#"><img src="image/icons8-user-96.png" style="width: 40px; height: 40px; margin-top: 10px;"
+                            alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div id="top-carousel" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('image/PHK_Exterior_1280.jpg')">
+                        <div class="carousel-overlay">
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/pexels-aleksandar-pasaric.jpg')">
+                        <div class="carousel-overlay">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/pexels-pixabay-290595.jpg')">
+                        <div class="carousel-overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--امکانات هتل-->
+    <main class="bg-light">
+        <div class="container shadow my-3" dir="rtl">
+            <div class="row d-flex p-3 pb-1">
+                <div class="col-10 col-sm-6 d-flex">
+                    <h2 class="px-1">هتل اسپیناس پالاس تهران</h2>
+                    <span class="hotels_stars" style="color: darkgoldenrod; line-height: 3rem">
+                        <span class="fa fa-star-o" style="color: darkgoldenrod"></span>
+                        <span class="fa fa-star-half-o" style="color: darkgoldenrod"></span>
+                        <span class="fa fa-star" style="color: darkgoldenrod"></span>
+                        <span class="fa fa-star" style="color: darkgoldenrod"></span>
+                        <span class="fa fa-star" style="color: darkgoldenrod"></span>
+                    </span>
+                </div>
+                <div class="col-10 col-sm-2 d-flex">
+                    <p style="font-size: 1.2rem; line-height: 2.8rem">بسیارخوب</p>
+                    <a href="#" class="pe-2 text-decoration-none text-dark" style="line-height: 2.9rem">(27)</a>
+                    <div class="bg-success text-white p-2 pt-1 shadow mx-2 rounded-3 mt-1" style="height: fit-content">4.5</div>
+                </div>
+                <div class="col-10 col-sm-4 d-flex border-end">
+                    <p style="font-size: 1.2rem; line-height: 2.8rem; text-decoration: line-through red">5,600,000</p>
+                    <div class="bg-danger text-white p-2 pt-1 shadow mx-2 rounded-3 mt-1" style="height: fit-content">تا 20%
+                        تخفیف</div>
+                </div>
+            </div>
+            <div class="row d-flex px-3 py-1">
+                <div class="col-10 col-sm-7 d-flex">
+                    <span class="fa fa-map-marker text-dark" style="font-size: 1.5rem;line-height: 2.5rem"></span>
+                    <p class="px-1" style="line-height: 2.8rem">آدرس:</p>
+                    <p class="px-1" style="line-height: 2.8rem;">تهران ،میدان سعادت
+                    آباد،میدان بهرود، خیابان عابدی، خیابان 33،
+                    </p>
+                </div>
+                <div class="col-10 col-sm-1 d-flex">
+                    <span class="fa fa-share-alt text-dark px-2" style="line-height: 2.8rem"></span>
+                    <span class="fa fa-heart px-2" style="line-height: 2.8rem;"></span>
+                </div>
+                <div class="col-10 col-sm-4 d-flex border-end">
+                    <p style="font-size: 1.2rem; line-height: 2.8rem;">شروع قیمت از: </p>
+                    <p class="px-2 fw-bolder" style="font-size: 1.2rem; line-height: 2.8rem;">4,800,000</p>
+                    <p style="font-size: 1.2rem; line-height: 2.8rem;">تومان</p>
+                </div>
+            </div>
+            <div class="row d-flex p-3 pt-1" style="min-height: 220px">
+                <div class="col-8 col-sm-6 p-2 rounded">
+                    <img src="image/هتل+اسپیناس.jpg" class="p-2 col-12 w-100 rounded h-100">
+                </div>
+                <div class="col-8 col-sm-6 p-2 d-flex flex-wrap rounded">
+                    <img src="image/هتل+اسپیناس.jpg" class="p-2 rounded col-12  w-100 h-50" style="width: 100%">
+                    <img src="image/هتل+اسپیناس.jpg" class="p-2 w-50 rounded h-50">
+                    <img src="image/هتل+اسپیناس.jpg" class="p-2 w-50 h-50 rounded">
+                </div>
+            </div>
+        </div>
+        <div class="container shadow border rounded my-3">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" style="direction: rtl;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            اتاق یک تخته
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex flex-row-reverse col-12 flex-wrap">
+                            <div class="col-4 px-1 d-flex">
+                                <img src="image/Standard-photo.jpg" alt="pic" class="w-100 rounded border shadow">
+                            </div>
+                            <div class="col-4 px-1" dir="rtl">
+                                <p>1 نفره - 1 تخت سینگل</p>
+                                <p>صبحانه</p>
+                                <p>B&B</p>
+                                <p>رزرو انلاین <i class="fa fa-check"></i> </p>
+                                <p class="bg-danger px-1 py-1 text-white rounded shadow" style="width: fit-content">تخفیف</p>
+                            </div>
+                            <div class="col-4 px-1" dir="rtl">
+                                <p>قیمت برای هر شب</p>
+                                <p class="bg-info px-1 py-1 text-white rounded shadow" style="width: fit-content">1,000,000
+                                    تومان</p>
+                                <p class="bg-success px-1 py-1 text-white rounded shadow" style="width: fit-content">رزرو اتاق
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" style="direction: rtl;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            اتاق دو تخته
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex flex-row-reverse col-12 flex-wrap">
+                            <div class="col-4 px-1 d-flex">
+                                <img src="image/Standard-photo.jpg" alt="pic" class="w-100 rounded border shadow">
+                            </div>
+                            <div class="col-4 px-1" dir="rtl">
+                                <p>2 نفره - 1 تخت سینگل</p>
+                                <p>صبحانه</p>
+                                <p>B&B</p>
+                                <p>رزرو انلاین <i class="fa fa-check"></i> </p>
+                                <p class="bg-danger px-1 py-1 text-white rounded shadow" style="width: fit-content">تخفیف</p>
+                            </div>
+                            <div class="col-4 px-1" dir="rtl">
+                                <p>قیمت برای هر شب</p>
+                                <p class="bg-info px-1 py-1 text-white rounded shadow" style="width: fit-content">1,000,000
+                                    تومان</p>
+                                <p class="bg-success px-1 py-1 text-white rounded shadow" style="width: fit-content">رزرو اتاق
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" style="direction: rtl;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            سوئیت یک خوابه برای دو نفر
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex flex-row-reverse col-12 flex-wrap">
+                            <div class="col-4 px-1 d-flex">
+                                <img src="image/Standard-photo.jpg" alt="pic" class="w-100 rounded border shadow">
+                            </div>
+                            <div class="col-4 px-1" dir="rtl">
+                                <p>2 نفره - 1 تخت سینگل</p>
+                                <p>صبحانه</p>
+                                <p>B&B</p>
+                                <p>رزرو انلاین <i class="fa fa-check"></i> </p>
+                                <p class="bg-danger px-1 py-1 text-white rounded shadow" style="width: fit-content">تخفیف</p>
+                            </div>
+                            <div class="col-4 px-1" dir="rtl">
+                                <p>قیمت برای هر شب</p>
+                                <p class="bg-info px-1 py-1 text-white rounded shadow" style="width: fit-content">1,000,000
+                                    تومان</p>
+                                <p class="bg-success px-1 py-1 text-white rounded shadow" style="width: fit-content">رزرو اتاق
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow col-12 mx-auto container emkanat-hotel m-3">
+            <p style="color: #222222;font-size: x-large;"><b>امکانات هتل</b></p>     
+            <ul class="d-flex flex-wrap justify-content-around" style="list-style: none; font-size: large;">
+                <li class="mx-3">
+                    <i class="bi bi-tv"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tv" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
+                        </svg></i>
+                    تلویزیون
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-water"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-water" viewBox="0 0 16 16">
+                            <path
+                                d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65z" />
+                        </svg></i>
+                    استخر
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-key"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-key" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                            <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></i>
+                    سوئیت
+                </li>
+                <li class="mx-3">
+                    <i class="material-icons">restaurant</i>
+                    رستوران
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-wifi">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z" />
+                            <path
+                                d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z" />
+                        </svg>
+                    </i>
+                    اینترنت
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-badge-wc">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-badge-wc" viewBox="0 0 16 16">
+                            <path
+                                d="M10.348 7.643c0-1.112.488-1.754 1.318-1.754.682 0 1.139.47 1.187 1.108H14v-.11c-.053-1.187-1.024-2-2.342-2-1.604 0-2.518 1.05-2.518 2.751v.747c0 1.7.905 2.73 2.518 2.73 1.314 0 2.285-.792 2.342-1.939v-.114h-1.147c-.048.615-.497 1.05-1.187 1.05-.839 0-1.318-.62-1.318-1.727v-.742zM4.457 11l1.02-4.184h.045L6.542 11h1.006L9 5.001H7.818l-.82 4.355h-.056L5.97 5.001h-.94l-.972 4.355h-.053l-.827-4.355H2L3.452 11h1.005z" />
+                            <path
+                                d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                        </svg>
+                    </i>
+                    سرویس فرنگی
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-badge-wc-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-badge-wc-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm11.666 1.89c.682 0 1.139.47 1.187 1.107H14v-.11c-.053-1.187-1.024-2-2.342-2-1.604 0-2.518 1.05-2.518 2.751v.747c0 1.7.905 2.73 2.518 2.73 1.314 0 2.285-.792 2.342-1.939v-.114h-1.147c-.048.615-.497 1.05-1.187 1.05-.839 0-1.318-.62-1.318-1.727v-.742c0-1.112.488-1.754 1.318-1.754zm-6.188.926h.044L6.542 11h1.006L9 5.001H7.818l-.82 4.355h-.056L5.97 5.001h-.94l-.972 4.355h-.053l-.827-4.355H2L3.452 11h1.005l1.02-4.184z" />
+                        </svg>
+                    </i>
+                    سرویس ایرانی
+                </li>
+                <li class="mx-1">
+                    <i class="bi bi-car-front">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-car-front" viewBox="0 0 16 16">
+                            <path
+                                d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z" />
+                            <path
+                                d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z" />
+                        </svg>
+                    </i>
+                    پارکینگ
+                </li>
+                <li class="mx-1">
+                    <i class='fas fa-mosque'></i>
+                    نمازخانه
+                </li>
+                <li class="mx-1">
+                    <i class="material-icons">weekend</i>
+                    لابی
+                </li>
+                <li class="mx-1">
+                    <i class="fas fa-signal"></i>
+                    ماهواره
+                </li>
+                <li class="mx-1">
+                    <i class="material-icons">fitness_center</i>
+                    سالن ورزش
+                </li>
+                <li class="mx-1">
+                    <i class="bi bi-cake2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake2"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683c-.149.034-.293.07-.432.107-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16c2.102 0 4.022-.227 5.432-.603.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12.418 12.418 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22.03 22.03 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a28.708 28.708 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802l-.598-.79Zm-.668 5.556L3 5.524v.967c.311.074.646.141 1 .201V5.315a21.05 21.05 0 0 1 2-.242v1.855c.325.024.659.042 1 .054V5.018a27.685 27.685 0 0 1 2 0v1.964c.341-.012.675-.03 1-.054V5.073c.72.054 1.393.137 2 .242v1.377c.354-.06.689-.127 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356 0 .006-.012.139-.356.356-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5c0-.006.012-.139.356-.356.319-.2.814-.4 1.47-.575ZM15 7.806v1.027l-.68.907a.938.938 0 0 1-1.17.276 1.938 1.938 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9c2.102 0 4.022-.227 5.432-.603.612-.163 1.149-.36 1.568-.591Zm0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.938.938 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426Z" />
+                        </svg>
+                    </i>
+                    کافی شاپ
+                </li>
+                <li class="mx-1">
+                    <i class="material-icons">rss_feed</i>
+                    اینترنت در لابی
+                </li>
+                <li class="mx-1">
+                    <i class="bi bi-telephone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                    </i>
+                    تلفن در اتاق
+                </li>
+                <li class="mx-1">
+                    <i class="material-icons">pool</i>
+                    سونا و جکوزی
+                </li>
+                <li class="mx-1">
+                    <i class="material-icons">kitchen</i>
+                    یخچال
+                </li>
+            </ul>
+            <p style="color: #222222;font-size: x-large;"><b>امکانات زیر را ندارد</b></p>
+            <ul class="d-flex flex-wrap justify-content-start" style="list-style: none; font-size: large;">
+                <i class="bi bi-8-circle-fill px-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-8-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-5.03 1.803c0-1.248-.943-1.84-1.646-1.992v-.065c.598-.187 1.336-.72 1.336-1.781 0-1.225-1.084-2.121-2.654-2.121-1.57 0-2.66.896-2.66 2.12 0 1.044.709 1.589 1.33 1.782v.065c-.697.152-1.647.732-1.647 2.003 0 1.39 1.19 2.344 2.953 2.344 1.77 0 2.989-.96 2.989-2.355Zm-4.347-3.71c0 .739.586 1.255 1.383 1.255s1.377-.516 1.377-1.254c0-.733-.58-1.23-1.377-1.23s-1.383.497-1.383 1.23Zm-.281 3.645c0 .838.72 1.412 1.664 1.412.943 0 1.658-.574 1.658-1.412 0-.843-.715-1.424-1.658-1.424-.944 0-1.664.58-1.664 1.424Z" />
+                    </svg>
+                </i>
+                بیلیارد
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-taxi-front">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-taxi-front" viewBox="0 0 16 16">
+                            <path
+                                d="M4.862 5.276 3.906 7.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 5H5.309a.5.5 0 0 0-.447.276ZM4 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-9 0a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
+                            <path
+                                d="M6 1a1 1 0 0 0-1 1v1h-.181A2.5 2.5 0 0 0 2.52 4.515l-.792 1.848a.807.807 0 0 1-.38.404c-.5.25-.855.715-.965 1.262L.05 9.708a2.5 2.5 0 0 0-.049.49v.413c0 .814.39 1.543 1 1.997V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.338c1.292.048 2.745.088 4 .088s2.708-.04 4-.088V14.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.892c.61-.454 1-1.183 1-1.997v-.413c0-.165-.016-.329-.049-.49l-.335-1.68a1.807 1.807 0 0 0-.964-1.261.807.807 0 0 1-.381-.404l-.792-1.848A2.5 2.5 0 0 0 11.181 3H11V2a1 1 0 0 0-1-1H6ZM4.819 4h6.362a1.5 1.5 0 0 1 1.379.91l.792 1.847a1.8 1.8 0 0 0 .853.904c.222.112.381.32.43.564l.336 1.679c.02.097.029.195.029.294v.413a1.48 1.48 0 0 1-1.408 1.484c-1.555.07-3.786.155-5.592.155-1.806 0-4.037-.084-5.592-.155A1.479 1.479 0 0 1 1 10.611v-.413c0-.099.01-.197.03-.294l.335-1.68a.807.807 0 0 1 .43-.563c.383-.19.685-.511.853-.904l.792-1.848A1.5 1.5 0 0 1 4.82 4Z" />
+                        </svg>
+                    </i>
+                    ترانسفر فرودگاهی
+                </li>
+                <li class="mx-3">
+                    <i class="bi bi-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                    </i>
+                    فروشگاه و غرفه
+                </li>
+            </ul>
+        </div>
+        <div class="shadow col-12 mx-auto container emkanat-hotel m-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="color: #222222;font-size: x-large;"><b>فاصله هتل با مکان های شهر</b></p>
+                    <ul style="list-style: none; font-size: medium;">
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i> 
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>      
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>     
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                        <li class="mx-3 my-2">
+                            <a href="#">
+                                <i class="bi bi-geo-alt">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            فاصله تا نمایشگاه بین المللی تهران :10.6 کیلومتر
+                        </li>    
+                    </ul>
+                </div>
+                <div class="col-md-6">                
+                    <p style="color: #222222;font-size: x-large;"><b>قوانین هتل</b></p>
+                    <p style="color: #222222;font-size: medium; text-align: justify; word-spacing: 1.5px; line-height: 25px; direction: rtl;">
+                        ***پذیرش هتل ساعت 15 میباشد***
+                        <br>
+                        هزینه اقامت برای کودکان زیر 3 سال در صورت عدم استفاده از سرویس اضافه رایگان می باشد.هزینه اقامت برای کودکان 3 تا 6 سال
+                        در صورت عدم استفاده از سرویس اضافه بصورت نیم بها می باشد.هزینه اقامت برای کودکان بالای 6 سال بصورت کامل محاسبه میشود.
+                        سرویس اضافه بصورت تخت ارائه می گردد.
+                        پذیرش صیغه نامه فقط با نامه اماکن امکانپذیر میباشد.
+                        قوانین کنسلی :
+                        اعلام کنسلی از 48 ساعت قبل از تاریخ ورود، مشمول جریمه 100% هزینه یک شب خواهد شد.
+                    </p>
+                    <p style="color: #222222;font-size: x-large;"><b>درباره هتل</b></p>
+                    <p style="color: #222222;font-size: medium; text-align: justify; word-spacing: 1.5px; line-height: 25px; direction: rtl;">
+                        هتل اسپیناس پالاس تهران، در سال ۱۳۹۴ در منطقه سعادت آباد، یکی از بهترین محله های پایتخت افتتاح شد. هتل پنج ستاره اسپیناس
+                        پالاس با طراحی مدرن و برگرفته از معماری معاصر، دارای ۴۰۰ اتاق و سوئیت مجهز در ۲۱ طبقه است. هتل اسپیناس پالاس از مدرن
+                        ترین ساختمان‌های تهران، با فضایی دلنشین، لابی مجلل، خدمات لوکس، به بهترین شکل پاسخگوی همه انتظارات و نیازهای مسافران و
+                        میهمانان خود است. اسپیناس با پرسنل حرفه ای و با تجربه، آماده است تا با افتخار به میزبانی مهمانان خود، اقامتی به یاد
+                        ماندنی و لذت بخش را برای شما رقم بزند.
+                        قرار گرفتن هتل اسپیناس پالاس در ارتفاعات منطقه سعادت آباد باعث شده است که مهمانان این هتل چشم اندازی زیبا و منحصر به فرد
+                        از تهران داشته باشند. اسپیناس پالاس تهران یکی از هتل‌های کلکسیون هتل‌های لوکس گروه اسپیناس است که با لابی باشکوه و شیک،
+                        سالن‌های گردهمایی و انواع امکانات اعم از مرکز خرید، انواع رستوران و فست فود، سالن ماساژ و بسیاری امکانات و خدمات خاص خود
+                        مورد توجه اکثر مسافران تهران قرار گرفته است. از جمله نزدیکترین جاذبه‌های تهران به هتل ۵ ستاره اسپیناس پالاس می‌توان به
+                        پارک پرواز و پارک ژوراسیک اشاره کرد. آب و هوای مطبوع این منطقه و دور بودن از شلوغی مرکز شهر از جمله دلایل مهمانان هتل
+                        اسپیناس پالاس برای انتخاب این هتل است.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mx-auto container my-2" style="direction: rtl;">
+            <p style="color: #222222;font-size: x-large;"><b>نظرات کاربران</b>(43 نظر)</p>
+        </div>
+        <div class="col-md-12 mx-auto my-2 container" >
+            <div class="row">
+                <div class="shadow col-md-4 bg-white rounded-1 mx-1">
+                    <div class="bg-success m-4 rounded-2 text-center" style="direction: rtl;">
+                        امتیاز کلی هتل : 8.9/10
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-5" style="direction: rtl;">امکانات هتل</div>
+                        <div class="progress col-md-7 px-0 ">   
+                            <div class="progress-bar my-auto" role="progressbar" aria-label="Example with label" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%(9.2)</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-5" style="direction: rtl;">قیمت</div>
+                        <div class="progress col-md-7 px-0 ">   
+                            <div class="progress-bar my-auto" role="progressbar" aria-label="Example with label" style="width: 71%;" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">71%(7.1)</div>
+                        </div>      
+                    </div>
+                    <div class="col-md-12 row">
+                        <div class="col-md-5" style="direction: rtl;">کیفیت اتاق ها</div>
+                        <div class="progress col-md-7 px-0 ">   
+                            <div class="progress-bar my-auto" role="progressbar" aria-label="Example with label" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%(8.7)</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row" >
+                        <div class="col-md-5"style="direction: rtl;">موقعیت مکانی</div>
+                        <div class="progress col-md-7 px-0 ">   
+                            <div class="progress-bar my-auto" role="progressbar" aria-label="Example with label" style="width:82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">82%(8.2)</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row" >
+                        <div class="col-md-5"style="direction: rtl;">رعایت بهداشت</div>
+                        <div class="progress col-md-7 px-0 ">   
+                            <div class="progress-bar my-auto" role="progressbar" aria-label="Example with label" style="width:95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%(9.5)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 rounded-1 px-0 " style="direction: rtl;" >
+                    <div class="shadow bg-white rounded-1 col-md-12 pb-2">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-2 mx-1">علی سامره</div>
+                            <div class="col-md-2 text-start mx-2">8.2/10</div>
+                        </div>
+                        <div class="col-md-12 my-3 px-1">
+                            <p style="text-align: justify;">مزایا : کیفیت اتاق ها و وسایلش وخدمات رفاهی اینجا بسیار عالی بود </p>
+                        </div>
+                        <div class="col-md-12 px-1">
+                            <p style="text-align: justify;">معایب : رفتار کارکنان زیاد خوب نبود</p>
+                        </div>
+                    </div>
+                    <div class="shadow bg-white rounded-1 col-md-12 pb-2 my-2">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-2 mx-1">علی سامره</div>
+                            <div class="col-md-2 text-start mx-2">8.2/10</div>
+                        </div>
+                        <div class="col-md-12 my-3 px-1">
+                            <p style="text-align: justify;">مزایا : کیفیت اتاق ها و وسایلش وخدمات رفاهی اینجا بسیار عالی بود </p>
+                        </div>
+                        <div class="col-md-12 px-1">
+                            <p style="text-align: justify;">معایب : رفتار کارکنان زیاد خوب نبود</p>
+                        </div>
+                    </div>
+                    <div class="shadow bg-white rounded-1 col-md-12 pb-2 my-2">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-2 mx-1">علی سامره</div>
+                            <div class="col-md-2 text-start mx-2">8.2/10</div>
+                        </div>
+                        <div class="col-md-12 my-3 px-1">
+                            <p style="text-align: justify;">مزایا : کیفیت اتاق ها و وسایلش وخدمات رفاهی اینجا بسیار عالی بود </p>
+                        </div>
+                        <div class="col-md-12 px-1">
+                            <p style="text-align: justify;">معایب : رفتار کارکنان زیاد خوب نبود</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                
+    </main> 
+    <footer class="bg-dark text-white pb-4" dir="rtl" style="background-color: #222222;">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="row" style="width: 90vw;">
+                <div class="footer-text">
+                    <div class="col h-100 d-flex justify-content-between">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h1>آمار بازدید</h1>
+                            </li>
+                            <li>
+                                <p>بازدید های امروز : 567</p>
+                            </li>
+                            <li>
+                                <p>بازدید های 7 پیش :3986</p>
+                            </li>
+                            <li>
+                                <p>بازدید های 30 روز پیش :15934</p>
+                            </li>
+                            <li>
+                                <p>کل بازدید ها : 1980000</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col h-100 d-flex justify-content-between">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h1>تماس با ما </h1>
+                            </li>
+                            <li>
+                                <a href="#">تلفن دفتر مرکزی :44456789</a>
+                            </li>
+                            <li>
+                                <a href="#">فکس: 66893412</a>
+                            </li>
+                            <li>
+                                <a href="#">ایمیل : info@hotelyar.ir</a>
+                            </li>
+                            <li>
+                                <a href="#">آدرس :تهران،بلوار دریا،</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex flex-row ">
+                        <div class="list-unstyled1 d-flex justify-content-around align-items-center flex-column">
+                            <div class="row">
+                                <img class="img-fluid" src="image/samandehi.png" alt="">
+                                <img class="img-fluid" src="image/download.png" alt=""
+                                    style="width: 100px;height: 100px;">
+                            </div>
+                            <img class="img-fluid" src="image/logo334-N1111.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div dir="ltr" class="row">
+                        <div class="col-sm-12 social-media d-flex justify-content-center">
+                            <img src="image/telegram_4902.png" alt="Telegram" class="mx-2">
+                            <img src="image/instagram_140.png" alt="Instagram" class="mx-2">
+                            <img src="image/facebook-circula.png" alt="Facebook" class="mx-2">
+                            <img src="image/twitter_.png" alt="Twitter" class="mx-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

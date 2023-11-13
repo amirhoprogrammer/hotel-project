@@ -112,6 +112,14 @@ span {
     color: white;
     border-radius: 10px
 }
+.emkanat-hotel{
+    background-color: white;
+    direction: rtl;
+    font-size: x-large;
+    border: 1px dashed #B22222;
+    border-radius: 10px;
+}
+
 
 @media (max-width: 700px) {
     .ertebat {
@@ -152,6 +160,10 @@ span {
     background-color: #A4A5EE;
     width: 210px;
 }
+.kadr1 {
+    background-color: white;
+    border-radius: 10px;
+}
 @media screen and (max-width=992px) {
     .titre{
         font-size: 1vw;
@@ -163,5 +175,5 @@ span {
     }
     .hotel-ca{
         max-height: 2500px;
-    }    
+    }
 }
